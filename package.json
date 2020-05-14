@@ -1,7 +1,7 @@
 {
-  "name": "test-head",
-  "version": "1.0.0",
-  "description": "react component for test head",
+  "name": "bar-chart-simple",
+  "version": "1.0.1",
+  "description": "react component for bar chart",
   "author": "",
   "license": "MIT",
   "repository": "/test-head",
@@ -49,5 +49,8 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "dependencies": {
+    "@amcharts/amcharts4": "^4.9.20"
+  }
 }
