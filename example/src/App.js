@@ -42,11 +42,11 @@ let data = [{
   "data_value": 441
  }, {
   "data_category": "South Africa",
-  "data_value": 2267
+  "data_value": 2261
  }];
 
 const App = () => {
-  return <ChartComponent data={data} text="Create React Library Example 😄" />
+  return <ChartComponent data={data} chart_type="pie_chart" text="Create React Library Example 😄" />
 }
 
 export default App

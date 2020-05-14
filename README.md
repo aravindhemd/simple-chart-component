@@ -1,4 +1,4 @@
-# test-head
+# Bar-chart and Pie-Chart
 
 > react component for Bar Chart
 
@@ -27,10 +27,15 @@ class Example extends Component {
     "data_value": 1882
    }];
   render() {
-    return <ChartComponent data={data}/>
+    return <ChartComponent data={data} chart_type="pie_chart"/>
   }
 }
 ```
+
+## Chart types
+
+- chart_type="pie_chart"
+- chart_type="bar_chart"
 
 ## Sample Data
 

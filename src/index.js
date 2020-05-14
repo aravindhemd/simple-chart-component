@@ -11,8 +11,10 @@ am4core.useTheme(am4themes_animated);
 export class ChartComponent extends React.Component {
   
   componentDidMount() {
-    let chart = am4core.create("chartdiv", am4charts.XYChart);
-    chart.data = this.props.data;
+    let {chart_type, data} = this.props;
+    if(chart_type !== 'pie_chart'){
+      let chart = am4core.create("chartdiv", am4charts.XYChart);
+      chart.data = data;
     chart.padding(40, 40, 40, 40);
 
     let categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
@@ -45,15 +47,15 @@ export class ChartComponent extends React.Component {
         return chart.colors.getIndex(target.dataItem.index);
        });
 
-      //  setInterval(function () {
-      //   am4core.array.each(chart.data, function (item) {
-      //     item.visits += Math.round(Math.random() * 200 - 100);
-      //     item.visits = Math.abs(item.visits);
-      //   })
-      //   chart.invalidateRawData();
-      //  }, 2000)
-
        categoryAxis.sortBySeries = series;
+    }
+    else{
+      let chart = am4core.create("chartdiv", am4charts.PieChart);
+      chart.data = data;
+      let series = chart.series.push(new am4charts.PieSeries());
+      series.dataFields.value = "data_value";
+      series.dataFields.category = "data_category";
+    }
   }
 
   
