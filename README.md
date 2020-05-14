@@ -2,7 +2,7 @@
 
 > react component for Bar Chart
 
-[![NPM](https://img.shields.io/npm/v/test-head.svg)](https://www.npmjs.com/package/test-head) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/test-head.svg)](https://www.npmjs.com/package/bar-chart-simple) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
